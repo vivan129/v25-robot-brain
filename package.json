@@ -1,0 +1,13 @@
+{
+  "name": "v25-robot-brain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "V25 robot brain UI + OpenAI proxy for Raspberry Pi 3B+",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

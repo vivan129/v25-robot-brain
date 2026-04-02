@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>V25</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="screen">
+      <header class="top-bar">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <div>
+            <div class="brand-title">V25</div>
+            <div class="brand-sub">robot brain</div>
+          </div>
+        </div>
+        <div class="status">
+          <span class="pill" id="status-pill">idle</span>
+          <span class="dot"></span>
+          <span class="time" id="clock">--:--</span>
+        </div>
+      </header>
+
+      <main class="core">
+        <section class="face">
+          <div class="halo"></div>
+          <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          <div class="wave" id="wave"></div>
+        </section>
+
+        <section class="transcript" id="transcript"></section>
+      </main>
+
+      <footer class="controls">
+        <button class="mic" id="mic">
+          <span class="mic-ring"></span>
+          <span class="mic-core"></span>
+          <span class="mic-label">talk</span>
+        </button>
+        <div class="input-wrap">
+          <input id="textInput" type="text" placeholder="Say something to V25" />
+          <button id="wakeToggle" class="wake">Wake: off</button>
+          <button id="send" class="send">Send</button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
